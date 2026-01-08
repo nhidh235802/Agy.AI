@@ -35,8 +35,8 @@ class User(Base):
     last_name = Column(String(50))
     
     # Phân quyền & Hạng
-    role = Column(Enum(UserRole), default=UserRole.USER)
-    tier = Column(Enum(UserTier), default=UserTier.FREE)
+    role = Column(Enum(UserRole), default=UserRole.USER, nullable=False)
+    tier = Column(Enum(UserTier), default=UserTier.FREE, nullable=False)
     
     # Kinh tế
     coin_balance = Column(Integer, default=0)

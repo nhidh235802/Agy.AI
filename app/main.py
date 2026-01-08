@@ -4,7 +4,7 @@ from app.models import all_models
 from app.api.endpoints import users
 
 # Lệnh này sẽ kiểm tra Database và tạo tất cả bảng nếu chưa có
-#Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
