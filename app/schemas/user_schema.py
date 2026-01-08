@@ -1,10 +1,10 @@
-from pydantic import BaseModel, EmailStr
-from typing import Optional
+from pydantic import BaseModel, EmailStr, StringConstraints
+from typing import Annotated, Optional
 
 # Khuôn mẫu cho dữ liệu người dùng gửi lên để Đăng Ký
 class UserCreate(BaseModel):
     email: EmailStr
-    password: str
+    password: Annotated[str, StringConstraints(min_length=8, max_length=64)]
     first_name: Optional[str] = None
     last_name: Optional[str] = None
 
