@@ -10,3 +10,7 @@
 			Rút kn: Chạy alembic init alembic và chỉ cần thay sqlalchemy.url trong alembic.ini thành url database dự án.
 			alembic revision --autogenerate -m "commit";
 			alembic upgrade head
+
+10/1/2026_	Bug: Sau khi tương tác với nút trên server, File HTML not found.
+			Fix: Từ file HTML xuất phát sẽ href tới hash api chứ không phải trực tiếp tới file HTML kia.
+			Nguyên nhân: Do việc gọi tới HTML đã được định nghĩa qua các routes trong main.py 
