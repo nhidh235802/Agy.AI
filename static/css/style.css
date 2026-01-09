@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.success { color: green; }
+.error { color: red; }
+/* Reset cơ bản */
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    width: 400px; /* Rộng hơn chút */
+    text-align: center;
+}
+
+h1 { margin-bottom: 0.5rem; color: #333; }
+p { margin-top: 0; color: #666; font-size: 0.9rem; }
+
+/* Input Styles */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Nhóm 2 ô input trên 1 dòng (First/Last name) */
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #0056b3; }
+button:disabled { cursor: not-allowed; }
+
+/* Message Styles */
+.message { margin-top: 15px; font-size: 14px; min-height: 20px; }
+.success { color: #28a745; }
+.error { color: #dc3545; }
+
+/* Link Styles */
+.footer-link { margin-top: 20px; font-size: 14px; }
+a { color: #007bff; text-decoration: none; }
+a:hover { text-decoration: underline; }
