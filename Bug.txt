@@ -1,0 +1,12 @@
+8/1/2026_	Bug: Không chạy được server do không thể kết nối được với DTB trên supbase.
+			Fix: Dùng link Transaction pooler thay vì Direct connection.
+			Nguyên nhân: Có thể là do Direct connection không hỗ trọ IPv4/IPv6, hoặc do một số mạng chặn port 5432, chuyển sang port 6543 sẽ giúp lách qua các rào cản đó, gián tiếp gửi yêu cầu tới server (Có thể kiểm tra bằng ping tới link supabase).
+
+9/1/2026_	Bug: Không thể đăng kí tài khoản do mật khẩu hash không được phép quá 72byte.
+			Fix: Băm sơ pass bằng sha-256 để lách luật.
+			Nguyên nhân: Đơn giản là thư viện bcrypt không cho phép.
+
+9/1/2026_	NOT Bug: Cài Alembic để sửa database qua file .py
+			Rút kn: Chạy alembic init alembic và chỉ cần thay sqlalchemy.url trong alembic.ini thành url database dự án.
+			alembic revision --autogenerate -m "commit";
+			alembic upgrade head
