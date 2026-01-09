@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Agy.AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Create Account</h1>
+            <p>Join Agy.AI and create your own characters</p>
+        </div>
+
+        <form id="registerForm">
+            <div class="input-group">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            
+            <input type="email" id="email" placeholder="Email Address" required>
+            
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            
+            <button type="submit" id="submitBtn">Sign Up</button>
+        </form>
+
+        <div id="message" class="message"></div>
+
+        <div class="footer-link">
+            <p>Already have an account? <a href="/login">Log In</a></p>
+            <p><a href="/">Back to Home</a></p>
+        </div>
+    </div>
+
+    <script src="/static/js/register.js"></script>
+</body>
+</html>
